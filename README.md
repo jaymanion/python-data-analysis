@@ -1,148 +1,123 @@
-Background
-It's time to put away the Excel sheet and enter the world of programming with Python. In this assignment, you'll use the concepts you've learned to complete two Python challenges, PyBank and PyPoll. Both tasks present a real-world situation where your newly developed Python scripting skills come in handy.
+# Python Financial & Election Data Analysis
 
-Before You Begin
-Before starting the assignment, be sure to complete the following steps:
+A Python-based data analysis project that processes large datasets to extract key financial and voting insights. This project demonstrates the use of Python for efficient data handling, aggregation, and reporting, replacing manual spreadsheet analysis with automated scripting.
 
-Create a new repository for this project called python-challenge. Do not add this homework assignment to an existing repository.
+---
 
-Clone the new repository to your computer.
+## Objective
+Analyze financial and election datasets using Python to compute key performance metrics, including profit trends and voting outcomes. The project focuses on transforming raw CSV data into structured insights through scripting and automation.
 
-Inside your local Git repository, create a folder for each Python assignment and name them PyBank and PyPoll.
+---
 
-In each folder that you just created, add the following content:
+## Tools & Technologies
+- Python  
+- CSV Module  
+- File I/O (Read/Write)  
+- Data Structures (Lists, Dictionaries)  
+- Iteration & Conditional Logic  
+- Basic Data Aggregation & Analysis  
 
-A new file called main.py. This will be the main script to run for each analysis.
+---
 
-A Resources folder that contains the CSV files you used. Make sure that your script has the correct path to the CSV file.
+## Dataset
+Two datasets were analyzed:
 
-An analysis folder that contains your text file that has the results from your analysis.
+### Financial Data (PyBank)
+- Monthly financial records  
+- Includes:
+  - Date  
+  - Profit/Loss values  
 
-Push these changes to GitHub or GitLab.
+### Election Data (PyPoll)
+- Voting dataset from a simulated election  
+- Includes:
+  - Voter ID  
+  - County  
+  - Candidate  
 
-Files
-Download the following files to help you get started:
+---
 
-Module 3 Challenge filesLinks to an external site.
+## Key Analysis Performed
 
-PyBank Instructions
-In this Challenge, you are tasked with creating a Python script to analyze the financial records of your company. You will be given a financial dataset called budget_data.csv. The dataset is composed of two columns: "Date" and "Profit/Losses".
+### Financial Analysis (PyBank)
+- Calculated total number of months in dataset  
+- Computed net total profit/loss over entire period  
+- Analyzed month-over-month changes in profit/loss  
+- Identified:
+  - Average change in profit/loss  
+  - Greatest increase in profits (date & value)  
+  - Greatest decrease in profits (date & value)  
 
-Your task is to create a Python script that analyzes the records to calculate each of the following values:
+### Election Analysis (PyPoll)
+- Calculated total number of votes cast  
+- Identified all candidates receiving votes  
+- Computed:
+  - Total votes per candidate  
+  - Percentage of votes per candidate  
+- Determined election winner based on popular vote  
 
-The total number of months included in the dataset
+---
 
-The net total amount of "Profit/Losses" over the entire period
+## Key Insights
+- Financial data revealed **significant fluctuations in monthly performance**, highlighting volatility in profit trends  
+- Average change calculations provided a clearer understanding of overall financial direction  
+- Election data showed **dominant candidate performance**, with one candidate receiving a large majority of votes  
+- Python scripting enabled efficient processing of large datasets that would be cumbersome in Excel  
 
-The changes in "Profit/Losses" over the entire period, and then the average of those changes
+---
 
-The greatest increase in profits (date and amount) over the entire period
+## Output Summary
 
-The greatest decrease in profits (date and amount) over the entire period
+The Python scripts generate structured outputs for both analyses:
+- Results printed directly to the terminal  
+- Results exported to text files for documentation and reporting  
 
-Your analysis should align with the following results:
+---
 
+## Example Output
+
+### Financial Analysis (PyBank)
 Financial Analysis
-----------------------------
+
 Total Months: 86
 Total: $22564198
 Average Change: $-8311.11
 Greatest Increase in Profits: Aug-16 ($1862002)
 Greatest Decrease in Profits: Feb-14 ($-1825558)
-In addition, your final script should both print the analysis to the terminal and export a text file with the results.
 
-PyPoll Instructions
-In this Challenge, you are tasked with helping a small, rural town modernize its vote-counting process.
-
-You will be given a set of poll data called election_data.csv. The dataset is composed of three columns: "Voter ID", "County", and "Candidate". Your task is to create a Python script that analyzes the votes and calculates each of the following values:
-
-The total number of votes cast
-
-A complete list of candidates who received votes
-
-The percentage of votes each candidate won
-
-The total number of votes each candidate won
-
-The winner of the election based on popular vote
-
-Your analysis should align with the following results:
-
+### Election Results (PyPoll)
 Election Results
--------------------------
 Total Votes: 369711
--------------------------
 Charles Casper Stockham: 23.049% (85213)
 Diana DeGette: 73.812% (272892)
 Raymon Anthony Doane: 3.139% (11606)
--------------------------
 Winner: Diana DeGette
--------------------------
-In addition, your final script should both print the analysis to the terminal and export a text file with the results.
 
-Hints and Considerations
-Consider what you've learned so far. You've learned how to import modules like csv. You’ve learned how to read and write files in various formats. You’ve learned how to store content in variables, lists, and dictionaries. You’ve learned how to iterate through basic data structures. And you’ve learned how to debug along the way. Using all that you've learned, try to break down your tasks into discrete mini-objectives.
+---
 
-The datasets for these Challenges are quite large. This was done purposefully to showcase one of the limits of Excel-based analysis. As data analysts, our first instinct is often to go straight to Excel, but creating scripts in Python can provide us with more powerful options for handling big data.
+## Business Impact
+- Demonstrates ability to process and analyze large datasets using Python  
+- Automates repetitive calculations and reporting tasks  
+- Provides scalable alternative to Excel-based analysis  
+- Highlights foundational skills in data analysis and scripting  
 
-Write one script for each of the provided datasets. Run each script separately to make sure that the code works for its respective dataset.
+---
 
-Always commit your work and back it up with pushes to GitHub or GitLab. You don't want to lose hours of your hard work! Also make sure that your repo has a detailed README.md file.
+## Repository Structure
+- `PyBank/` – Financial analysis script and data  
+- `PyPoll/` – Election analysis script and data  
+- `Resources/` – Raw CSV datasets  
+- `analysis/` – Output text files  
 
-Requirements
-Correctly Reads in the CSV (10 points)
-Reads in the CSVs for both PyBank and PyPoll using Python (5 points)
+---
 
-Successfully stores the header row (5 points)
+## Future Improvements
+- Refactor scripts using Pandas for more advanced data manipulation  
+- Visualize results using Matplotlib or Seaborn  
+- Combine analyses into a unified reporting dashboard  
+- Integrate with databases for larger-scale data processing  
 
-Results Printed out to correctly to terminal (40 points)
-Results correctly display for PyBank:
+---
 
-Total Months (5 points)
-
-Total (5 points)
-
-Average Change (5 points)
-
-Greatest Increase (5 points)
-
-Greatest Decrease (5 points)
-
-Results correctly display for PyPoll:
-
-Total Votes (5 points)
-
-Each candidate’s total votes and percent of votes (5 points)
-
-Winner (5 points)
-
-Code Runs Error Free (10 points)
-Error Free (5 points)
-
-Producing consistent results (5 points)
-
-Exports results to text file (30 points)
-The text file contains for PyBank:
-
-Total Months (2.5 points)
-
-Total (2.5 points)
-
-Average Change (5 points)
-
-Greatest Increase (5 points)
-
-Greatest Decrease (5 points)
-
-The text file contains for Pypoll:
-
-Total Votes (2.5 points)
-
-Each candidate’s total votes and percent of votes (2.5 points)
-
-Winner (5 points)
-
-Code is cleaned and commented (10 points)
-Has additional tests and debugging removed (5 points)
-
-Commented (5 points)
+## Author
+Jay Manion
